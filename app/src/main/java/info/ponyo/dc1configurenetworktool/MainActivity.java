@@ -2,7 +2,6 @@ package info.ponyo.dc1configurenetworktool;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("DC1配网工具");
 
         TextView tvTips = findViewById(R.id.tv_tips);
         tvTips.setText("1. 长按DC1电源键\n2. 连接wifi:PHI_PLUG1_xxxx\n3. 输入wifi名称和密码\n4. 点击配置按钮\n5. 收到配网成功的消息后插排会自动重启");
